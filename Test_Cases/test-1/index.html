@@ -5,8 +5,65 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Masai Admission</title>
+    <style>
+        body{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        header{
+            border: 1px red solid;
+            background-color: cadetblue;
+        }
+        .main-page{
+            width: 50%;
+            margin: auto;
+            border: 1px red solid;
+        }
+        ul{
+            list-style: none;
+            display: flex;
+            justify-content: space-between;
+            font-size: 18px;
+            font-weight: 600;
+        }
+        .form-box{
+            margin: 10px auto;
+            width: 80%;
+        }
+        form input{
+            margin: 5px auto;
+            padding: 5px;
+            border-radius: 5px;
+        }
+    </style>
 </head>
 <body>
-    
+    <div class="main">
+        <header>
+            <div class="main-page">
+                <ul>
+                    <li>Home</li>
+                    <li>DataBase</li>
+                    <li>Admitted</li>
+                    <li>Rejected</li>
+                </ul>
+            </div>
+        </header>
+        <div class="main-page">
+            <div class="form-box">
+                <form>
+                    <h3>Enter your details</h3>
+                    <input type="text" placeholder="Name"/> <br/>
+                    <input type="text" placeholder="image"/><br/>
+                    <input type="number" placeholder="Age"/><br/>
+                    <input type="text" placeholder="gender"/><br/>
+                    <input type="email" placeholder="email"/><br/>
+                    <input type="tel" placeholder="mobile"/><br/>
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
